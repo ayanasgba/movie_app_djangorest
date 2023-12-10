@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from .models import Director, Movie, Review
 from .serializers import DirectorSerializer, MovieSerializer, ReviewSerializer
 from rest_framework import status
+
 # Вывести список режиссеров
 @api_view(['GET'])
 def director_list_view(request):

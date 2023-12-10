@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+
 urlpatterns = [
     path('api/v1/directors/', views.director_list_view, name='director_list_view'),
     path('api/v1/directors/<int:id>/', views.director_detail_view, name='director_detail_view'),
